@@ -1,19 +1,14 @@
-import React from 'react'
-import './Loader.css'
-export default function Loading() {
+import React from 'react';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
+const Loading = () => {
   return (
-    <div>
-     
+    <DotLottieReact
+      src="https://lottie.host/5e590bed-2693-4175-88e5-270cc4548cc1/3I1U4j9fuZ.lottie"
+      loop
+      autoplay
+    />
+  );
+};
 
-
-
-<div class="loader-container">
-    <div class="loader-item car">🚗</div>
-    <div class="loader-item watch">⌚</div>
-    <div class="loader-item clothes">👕</div>
-    <p> Please Wait...</p>
-</div>
-
-    </div>
-  )
-}
+export default Loading;
